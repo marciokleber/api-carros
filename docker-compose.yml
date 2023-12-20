@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:8
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_DATABASE=car
+      - MYSQL_USER=car
+      - MYSQL_PASSWORD=car
+    ports:
+      - 3306:3306
